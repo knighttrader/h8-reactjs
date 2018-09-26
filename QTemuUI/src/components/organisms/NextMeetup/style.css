@@ -1,0 +1,19 @@
+.NextMeetup {
+  margin: 25px 15px;
+}
+
+.NextMeetup-Body {
+  background: #C4C4C4;
+  height: auto;
+  width: auto;
+  margin: 15px;
+  padding: 5px 20px 25px 20px;
+}
+
+.NextMeetup-BodyTitle {
+  font-weight: bold;
+}
+
+.NextMeetup-BodyDate {
+  color: grey;
+}
