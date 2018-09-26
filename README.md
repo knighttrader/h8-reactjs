@@ -1,4 +1,4 @@
-# HACKTIV8 - REACT NATIVE COURSE EXERCISE
+# HACKTIV8 - REACT & REACT NATIVE COURSE EXERCISE
 
 React adalah library JavaScript yang dibuat oleh Facebook yang ideal untuk membangun aplikasi dengan user interface yang interaktif dan dinamis.
 
