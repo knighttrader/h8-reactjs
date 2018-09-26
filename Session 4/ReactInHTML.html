@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ReactJS in HTML</title>
+<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- Load Babel -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		
+	</head>
+	<body>
+    <div id="root"></div>
+
+		<!-- Load React. -->
+		
+    
+    <script src="test.js" type="text/babel">
+
+		  class Hello extends React.Component {
+		  
+  constructor(){
+    super();
+    this.state = {
+    	message: "my friend (from state)!"
+    };
+    this.updateMessage = this.updateMessage.bind(this);
+  }
+
+  updateMessage() {
+    this.setState({
+    	message: "my friend (from changed state)!"
+    });
+  }
+
+  render() {
+		return (
+	  	<div>
+	    	<h1>Hello {this.state.message}!</h1>
+	    	<button onClick={this.updateMessage}>Click me!</button>
+	  	</div>   
+		)
+  }
+}
+
+class App extends React.Component {
+  render() {
+    return <h1>Hallo, Hacktiv8!</h1>;
+  }
+}
+
+ReactDOM.render(
+  <Hello />,
+  document.getElementById("root")
+);
+		  
+
+    </script>
+	</body>
+</html>

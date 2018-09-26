@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>MeetUp</title>
+
+		
+	</head>
+	<body>
+    <div id="root"></div>
+
+
+
+
+
+		<script src="https://unpkg.com/react@15/dist/react.min.js"> </script>
+		<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <script type="text/babel">
+		return (
+  React.DOM.nav({className: 'navigation-dark'},
+    [React.DOM.h1({},
+      React.DOM.a(
+        {href: 'http://instagram.com/rizafahmi'},
+        'Instagram'
+      )
+    ),
+      React.DOM.form({},
+        React.DOM.div({className: 'form-group'}, [
+          React.DOM.label({for: 'search'}, 'Search'),
+          React.DOM.input({type: 'email', className: 'form-control', placeholder: 
+                          'email'})
+        ])
+      ),
+      React.DOM.a({
+        className: 'btn btn-primary',
+        href: 'https://instagram.com'
+      }, 'Get the app')
+    ]
+  )
+)
+
+
+    </script>
+	</body>
+</html>
